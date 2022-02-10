@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Номер</title><link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/datepicker.min.css">
+    <link rel="stylesheet" href="libs/aos.css">
+    <link rel="stylesheet" href="libs/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="libs/air-datepicker.css">
+    <link rel="stylesheet" href="libs/nice-select.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__tablet-btn"><span></span></div>
+        <div class="container"> 
+          <div class="header__wrapper"><a class="header__logo logo" href="index.html"><img src="img/logo.svg" alt=""></a><a class="header__phone-m" href="#"> 
+              <svg class="icon icon-phone icon-mod">
+                <use xlink:href="/img/svg/sprite.svg#phone"></use>
+              </svg></a>
+            <div class="header__menu-btn"> <span></span><span> </span><span></span></div>
+            <div class="header__inner"> 
+              <div class="header__top"> <a class="header__phone" href="#"> 
+                  <svg class="icon icon-phone icon-mod">
+                    <use xlink:href="/img/svg/sprite.svg#phone"></use>
+                  </svg>8 800 737 77 99 </a>
+                <p> 
+                  <svg class="icon icon-map icon-mod">
+                    <use xlink:href="/img/svg/sprite.svg#map"></use>
+                  </svg><strong>ул. Ленинградская, 36 </strong><span>(круглосуточно)</span>
+                </p><a class="social__link" href="#"> 
+                  <svg class="icon icon-instagram icon-mod">
+                    <use xlink:href="/img/svg/sprite.svg#instagram"></use>
+                  </svg>Instagram</a>
+                <ul class="header__lang-list lang__list"> 
+                  <li class="lang__list-item active"><a href="#">Rus                    </a></li>
+                  <li class="lang__list-item"><a href="#">Eng</a></li>
+                  <li class="lang__list-item"><a href="#">Cni</a></li>
+                </ul>
+              </div>
+              <div class="header__bottom"> 
+                <nav class="header__menu menu"> 
+                  <ul class="menu__list"> 
+                    <li> <a href="index.html">Главная</a></li>
+                    <li><a href="##">Номера</a>
+                      <ul class="navrooms-hover"> 
+                        <li> 
+                          <p>Люкс<span> ОТ 5 700 ₽</span></p><a href="#">Подробнее</a>
+                        </li>
+                        <li> 
+                          <p>Одноместные<span> ОТ 5 700 ₽</span></p><a href="#">Подробнее</a>
+                        </li>
+                        <li> 
+                          <p>Двухместные<span> ОТ 5 700 ₽</span></p><a href="#">Подробнее</a>
+                        </li>
+                        <li> 
+                          <p>Семейные<span> ОТ 5 700 ₽</span></p><a href="#">Подробнее</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li> <a href="#">Ресторан</a></li>
+                    <li> <a href="#">Акватория</a></li>
+                    <li> <a href="company.html">О гостинице</a></li>
+                    <li> <a href="#">Для бизнеса</a></li>
+                    <li> <a href="#">Отзывы</a></li>
+                    <li> <a href="contact.html">Контакты</a></li>
+                  </ul>
+                </nav><a class="header__feedback popup__click" href="#" data-modal="#popup">Забронировать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="tablet"> 
+          <div class="container">
+            <div class="tablet__header"><a class="tablet__logo logo" href="/"> <img src="img/logo-white.svg" alt=""></a><a class="tablet__phone" href="tel:+78007377799"> 
+                <svg class="icon icon-phone mod-tablet">
+                  <use xlink:href="/img/svg/sprite.svg#phone"></use>
+                </svg>8 800 737 77 99</a><a class="tablet__btn" href="#">
+                 Забронировать
+                <svg class="icon icon-arrow arrow-tablet">
+                  <use xlink:href="/img/svg/sprite.svg#arrow"></use>
+                </svg></a></div>
+            <div class="tablet__main"> 
+              <ul class="tablet__main-list"> 
+                <li> <a href="index.html">Главная</a></li>
+                <li> <a href="room.html">Номера</a></li>
+                <li> <a href="#">Ресторан</a></li>
+                <li> <a href="#">Акватория</a></li>
+                <li> <a href="company.html">О гостинице</a></li>
+                <li> <a href="#">Для бизнеса</a></li>
+                <li> <a href="#">Отзывы</a></li>
+                <li> <a href="contact.html">Контакты</a></li>
+              </ul>
+              <ul class="tablet__main-social"> 
+                <li>Мы в социальных сетях:</li>
+                <li> <a href="#"> 
+                    <svg class="icon icon-vk social">
+                      <use xlink:href="/img/svg/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li> <a href="#"> 
+                    <svg class="icon icon-insta social">
+                      <use xlink:href="/img/svg/sprite.svg#insta"></use>
+                    </svg></a></li>
+                <li> <a href="#"> 
+                    <svg class="icon icon-ok social">
+                      <use xlink:href="/img/svg/sprite.svg#ok"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+      </header>
+      <main class="main">
+        <div class="text-page"> 
+          <div class="container"> 
+            <ul class="breadcrumbs flex">
+              <li><a href="#">Главная</a></li>
+              <li> Контакты</li>
+            </ul>
+          </div>
+        </div>
+      </main><<<<<<< HEAD
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="libs/swiper-bundle.min.js"></script>
+      <script src="libs/jquery.min.js"> </script>
+      <script src="libs/datepicker.min.js"></script>
+      <script src="libs/datepicker.en.js"></script>
+      <footer class="main-footer"> 
+        <div class="container"> 
+          <div class="main-footer__content"> <a class="main-footer__logo" href="index.html"> <img src="../../img/logo-white.svg" alt="Logo">
+              <p class="main-footer__logo-text">Уют и комфорт — <br>вот главный наш девиз!</p></a>
+            <div class="main-footer__menu">
+              <p>Меню</p>
+              <ul class="main-footer__list"> 
+                <li class="main-footer__list-item"> <a href="#">Номера</a></li>
+                <li class="main-footer__list-item"> <a href="#">Для бизнеса</a></li>
+                <li class="main-footer__list-item"> <a href="#">Ресторан</a></li>
+                <li class="main-footer__list-item"> <a href="#">Отзывы</a></li>
+                <li class="main-footer__list-item"> <a href="#">Акватория</a></li>
+                <li class="main-footer__list-item"> <a href="#">Контакты</a></li>
+                <li class="main-footer__list-item"> <a href="#">О гостинице</a></li>
+              </ul>
+            </div>
+            <div class="main-footer__room-reserv">
+              <div class="main-footer__contacts">
+                <div class="main-footer__phone"> <span>Телефон:</span><a href="tel:+88007377799"> 
+                    <svg class="icon icon-phone__footer phone__footer fill">
+                      <use xlink:href="/img/svg/sprite.svg#phone__footer"></use>
+                    </svg>8 800 737 77 99</a>
+                  <p>(круглосуточно)</p>
+                </div>
+                <div class="main-footer__address"><span>Адрес отеля:</span><strong>
+                    <svg class="icon icon-map__footer phone__footer fill">
+                      <use xlink:href="/img/svg/sprite.svg#map__footer"></use>
+                    </svg>ул. Ленинградская, 36</strong>
+                  <p>(круглосуточно)</p>
+                </div>
+              </div>
+              <div class="main-footer__reservation"><a class="footer__btn" href="#">
+                   Забронировать номер
+                  <svg class="icon icon-right__footer right__footer fill">
+                    <use xlink:href="/img/svg/sprite.svg#right__footer"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="main-footer__socials">
+            <p class="main-footer__roots">© 2021 «Zabaikalie». Все права защищены.</p>
+            <p class="main-footer__social">Мы в социальных сетях:<a href="#"> 
+                <svg class="icon icon-vk__footer footer__svg-width fill">
+                  <use xlink:href="/img/svg/sprite.svg#vk__footer"></use>
+                </svg></a><a href="#"> 
+                <svg class="icon icon-instagram__footer footer__svg-width fill">
+                  <use xlink:href="/img/svg/sprite.svg#instagram__footer"></use>
+                </svg></a><a href="#"> 
+                <svg class="icon icon-classmates__footer footer__svg-width fill">
+                  <use xlink:href="/img/svg/sprite.svg#classmates__footer"></use>
+                </svg></a></p>
+            <p class="main-footer__develop">Разработка сайта —<a class="flex" href="#"> 
+                <svg class="icon icon-forest__footer forest__footer fill">
+                  <use xlink:href="/img/svg/sprite.svg#forest__footer"></use>
+                </svg></a></p>
+          </div>
+        </div>
+      </footer>
+      <div class="popup js__popup-open" data-popup="#popup">
+        <div class="popup__body">
+          <form class="popup__content js__popup-content" action="#" id="date8"><span class="popup__close">
+              <svg class="icon icon-popup___close popup___close">
+                <use xlink:href="/img/svg/sprite.svg#popup___close"></use>
+              </svg></span>
+            <h6 class="title">Забронировать номер</h6>
+            <label class="js__label" for="calendar">
+               Дата заезда:<input id="calendar" type="text"  name="date" class="calendar form-control" value="не выбрано">
+              <svg class="icon icon-popup__calendar popup__calendar">
+                <use xlink:href="/img/svg/sprite.svg#popup__calendar"></use>
+              </svg>
+              <svg class="icon icon-popup__calendar-check popup__calendar-check js__calendar-check">
+                <use xlink:href="/img/svg/sprite.svg#popup__calendar-check"></use>
+              </svg>
+            </label>
+            <label class="js__label" for="calendar1">
+               Дата выезда:<input id="calendar1" type="text"  name="date" class="calendar form-control" value="не выбрано">
+              <svg class="icon icon-popup__calendar popup__calendar">
+                <use xlink:href="/img/svg/sprite.svg#popup__calendar"></use>
+              </svg>
+              <svg class="icon icon-popup__calendar-check popup__calendar-check js__calendar-check">
+                <use xlink:href="/img/svg/sprite.svg#popup__calendar-check"></use>
+              </svg>
+            </label>
+            <div class="popup__quests js__click">Количество гостей:
+              <div class="popup__text js__popup-color"> 
+                <div class="js__popupInputDate"> не выбрано</div>
+                <div class="js__popup__children"> </div>
+              </div>
+              <svg class="icon icon-popup__user popup__calendar js__popup-userblock">
+                <use xlink:href="/img/svg/sprite.svg#popup__user"></use>
+              </svg>
+              <svg class="icon icon-popup__user-follow- popup__calendar js__popup-userNone">
+                <use xlink:href="/img/svg/sprite.svg#popup__user-follow-"></use>
+              </svg>
+              <div class="popup__people js__popup-people"><strong class="js__popup-number">Взрослые: 2</strong>
+                <div class="popup__blog-people"> 
+                  <button class="js__popup-minus"> 
+                    <svg class="icon icon-popup__minus popup__minus">
+                      <use xlink:href="/img/svg/sprite.svg#popup__minus"></use>
+                    </svg>
+                  </button>
+                  <div class="popup__box-people js__popup-append"></div>
+                  <button class="js__popup-plus"> 
+                    <svg class="icon icon-popup__plus popup__minus">
+                      <use xlink:href="/img/svg/sprite.svg#popup__plus"></use>
+                    </svg>
+                  </button>
+                </div><strong class="js__popup-numberChildren">Ребенок: 0</strong>
+                <div class="popup__blog-people"> 
+                  <button class="js__popup-minusChildren"> 
+                    <svg class="icon icon-popup__minus popup__minus">
+                      <use xlink:href="/img/svg/sprite.svg#popup__minus"></use>
+                    </svg>
+                  </button>
+                  <div class="popup__box-people js__popup-appendChildren"></div>
+                  <button class="js__popup-plusChildren"> 
+                    <svg class="icon icon-popup__plus popup__minus">
+                      <use xlink:href="/img/svg/sprite.svg#popup__plus"></use>
+                    </svg>
+                  </button>
+                </div><strong>Возраст детей</strong>
+                <div class="popup__selects-flex js__popup-opendselect"> </div>
+                <div class="js__popup-selectremove"><div class="select js__popup-select">
+<div class="select__trigger">
+<span>1</span>
+<div class="select__arrow">
+                  <svg class="icon icon-popup__select popup__select">
+                    <use xlink:href="/img/svg/sprite.svg#popup__select"></use>
+                  </svg></div>
+</div>
+<div class="select__drop">
+<ul class="select__list select__scroll">
+<li>
+<input id="select_0" type="radio" name="select" />
+<label for="select_0">1</label>
+</li>
+<li>
+<input id="select_1" type="radio" name="select" />
+<label for="select_1">2</label>
+</li>
+<li>
+<input id="select_2" type="radio" name="select" />
+<label for="select_2">3</label>
+</li>
+<li>
+<input id="select_3" type="radio" name="select" />
+<label for="select_3">4</label>
+</li>
+<li>
+<input id="select_4" type="radio" name="select" />
+<label for="select_4">5</label>
+</li>
+<li>
+<input id="select_5" type="radio" name="select" />
+<label for="select_5">6</label>
+</li>
+<li>
+<input id="select_6" type="radio" name="select" />
+<label for="select_6">7</label>
+</li>
+<li>
+<input id="select_7" type="radio" name="select" />
+<label for="select_7">8</label>
+</li>
+<li>
+<input id="select_8" type="radio" name="select" />
+<label for="select_8">9</label>
+</li>
+<li>
+<input id="select_9" type="radio" name="select" />
+<label for="select_9">10</label>
+</li>
+<li>
+<input id="select_10" type="radio" name="select" />
+<label for="select_10">11</label>
+</li>
+<li>
+<input id="select_11" type="radio" name="select" />
+<label for="select_11">12</label>
+</li>
+<li>
+<input id="select_12" type="radio" name="select" />
+<label for="select_12">13</label>
+</li>
+<li>
+<input id="select_13" type="radio" name="select" />
+<label for="select_13">14</label>
+</li>
+<li>
+<input id="select_14" type="radio" name="select" />
+<label for="select_14">15</label>
+</li>
+<li>
+<input id="select_15" type="radio" name="select" />
+<label for="select_15">16</label>
+</li>
+<li>
+<input id="select_16" type="radio" name="select" />
+<label for="select_16">17</label>
+</li>
+</ul>
+</div>
+</div>
+<div class="select js__popup-select">
+<div class="select__trigger">
+<span>1</span>
+<div class="select__arrow">
+                  <svg class="icon icon-popup__select popup__select">
+                    <use xlink:href="/img/svg/sprite.svg#popup__select"></use>
+                  </svg></div>
+</div>
+<div class="select__drop">
+<ul class="select__list select__scroll">
+<li>
+<input id="select_0" type="radio" name="select" />
+<label for="select_0">1</label>
+</li>
+<li>
+<input id="select_1" type="radio" name="select" />
+<label for="select_1">2</label>
+</li>
+<li>
+<input id="select_2" type="radio" name="select" />
+<label for="select_2">3</label>
+</li>
+<li>
+<input id="select_3" type="radio" name="select" />
+<label for="select_3">4</label>
+</li>
+<li>
+<input id="select_4" type="radio" name="select" />
+<label for="select_4">5</label>
+</li>
+<li>
+<input id="select_5" type="radio" name="select" />
+<label for="select_5">6</label>
+</li>
+<li>
+<input id="select_6" type="radio" name="select" />
+<label for="select_6">7</label>
+</li>
+<li>
+<input id="select_7" type="radio" name="select" />
+<label for="select_7">8</label>
+</li>
+<li>
+<input id="select_8" type="radio" name="select" />
+<label for="select_8">9</label>
+</li>
+<li>
+<input id="select_9" type="radio" name="select" />
+<label for="select_9">10</label>
+</li>
+<li>
+<input id="select_10" type="radio" name="select" />
+<label for="select_10">11</label>
+</li>
+<li>
+<input id="select_11" type="radio" name="select" />
+<label for="select_11">12</label>
+</li>
+<li>
+<input id="select_12" type="radio" name="select" />
+<label for="select_12">13</label>
+</li>
+<li>
+<input id="select_13" type="radio" name="select" />
+<label for="select_13">14</label>
+</li>
+<li>
+<input id="select_14" type="radio" name="select" />
+<label for="select_14">15</label>
+</li>
+<li>
+<input id="select_15" type="radio" name="select" />
+<label for="select_15">16</label>
+</li>
+<li>
+<input id="select_16" type="radio" name="select" />
+<label for="select_16">17</label>
+</li>
+</ul>
+</div>
+</div>
+<div class="select js__popup-select">
+<div class="select__trigger">
+<span>1</span>
+<div class="select__arrow">
+                  <svg class="icon icon-popup__select popup__select">
+                    <use xlink:href="/img/svg/sprite.svg#popup__select"></use>
+                  </svg></div>
+</div>
+<div class="select__drop">
+<ul class="select__list select__scroll">
+<li>
+<input id="select_0" type="radio" name="select" />
+<label for="select_0">1</label>
+</li>
+<li>
+<input id="select_1" type="radio" name="select" />
+<label for="select_1">2</label>
+</li>
+<li>
+<input id="select_2" type="radio" name="select" />
+<label for="select_2">3</label>
+</li>
+<li>
+<input id="select_3" type="radio" name="select" />
+<label for="select_3">4</label>
+</li>
+<li>
+<input id="select_4" type="radio" name="select" />
+<label for="select_4">5</label>
+</li>
+<li>
+<input id="select_5" type="radio" name="select" />
+<label for="select_5">6</label>
+</li>
+<li>
+<input id="select_6" type="radio" name="select" />
+<label for="select_6">7</label>
+</li>
+<li>
+<input id="select_7" type="radio" name="select" />
+<label for="select_7">8</label>
+</li>
+<li>
+<input id="select_8" type="radio" name="select" />
+<label for="select_8">9</label>
+</li>
+<li>
+<input id="select_9" type="radio" name="select" />
+<label for="select_9">10</label>
+</li>
+<li>
+<input id="select_10" type="radio" name="select" />
+<label for="select_10">11</label>
+</li>
+<li>
+<input id="select_11" type="radio" name="select" />
+<label for="select_11">12</label>
+</li>
+<li>
+<input id="select_12" type="radio" name="select" />
+<label for="select_12">13</label>
+</li>
+<li>
+<input id="select_13" type="radio" name="select" />
+<label for="select_13">14</label>
+</li>
+<li>
+<input id="select_14" type="radio" name="select" />
+<label for="select_14">15</label>
+</li>
+<li>
+<input id="select_15" type="radio" name="select" />
+<label for="select_15">16</label>
+</li>
+<li>
+<input id="select_16" type="radio" name="select" />
+<label for="select_16">17</label>
+</li>
+</ul>
+</div>
+</div>
+<div class="select js__popup-select">
+<div class="select__trigger">
+<span>1</span>
+<div class="select__arrow">
+                  <svg class="icon icon-popup__select popup__select">
+                    <use xlink:href="/img/svg/sprite.svg#popup__select"></use>
+                  </svg></div>
+</div>
+<div class="select__drop">
+<ul class="select__list select__scroll">
+<li>
+<input id="select_0" type="radio" name="select" />
+<label for="select_0">1</label>
+</li>
+<li>
+<input id="select_1" type="radio" name="select" />
+<label for="select_1">2</label>
+</li>
+<li>
+<input id="select_2" type="radio" name="select" />
+<label for="select_2">3</label>
+</li>
+<li>
+<input id="select_3" type="radio" name="select" />
+<label for="select_3">4</label>
+</li>
+<li>
+<input id="select_4" type="radio" name="select" />
+<label for="select_4">5</label>
+</li>
+<li>
+<input id="select_5" type="radio" name="select" />
+<label for="select_5">6</label>
+</li>
+<li>
+<input id="select_6" type="radio" name="select" />
+<label for="select_6">7</label>
+</li>
+<li>
+<input id="select_7" type="radio" name="select" />
+<label for="select_7">8</label>
+</li>
+<li>
+<input id="select_8" type="radio" name="select" />
+<label for="select_8">9</label>
+</li>
+<li>
+<input id="select_9" type="radio" name="select" />
+<label for="select_9">10</label>
+</li>
+<li>
+<input id="select_10" type="radio" name="select" />
+<label for="select_10">11</label>
+</li>
+<li>
+<input id="select_11" type="radio" name="select" />
+<label for="select_11">12</label>
+</li>
+<li>
+<input id="select_12" type="radio" name="select" />
+<label for="select_12">13</label>
+</li>
+<li>
+<input id="select_13" type="radio" name="select" />
+<label for="select_13">14</label>
+</li>
+<li>
+<input id="select_14" type="radio" name="select" />
+<label for="select_14">15</label>
+</li>
+<li>
+<input id="select_15" type="radio" name="select" />
+<label for="select_15">16</label>
+</li>
+<li>
+<input id="select_16" type="radio" name="select" />
+<label for="select_16">17</label>
+</li>
+</ul>
+</div>
+</div>
+                </div>
+              </div>
+            </div><div class="select popup__select-classic">
+<div class="select__trigger">
+<span>не выбрано</span>
+<div class="select__arrow">
+            <svg class="icon icon-popup__arrow popup__arrow">
+              <use xlink:href="/img/svg/sprite.svg#popup__arrow"></use>
+            </svg></div>
+<div class="select__label select__label--dark">Тип номера:</div>
+</div>
+<div class="select__drop">
+<ul class="select__list select__scroll">
+<li>
+<input id="select0" type="radio" name="select" />
+<label for="select0">Люкс 1</label>
+</li>
+<li>
+<input id="select1" type="radio" name="select" />
+<label for="select1">Люкс 2</label>
+</li>
+<li>
+<input id="select2" type="radio" name="select" />
+<label for="select2">Люкс 3</label>
+</li>
+</ul>
+</div>
+</div>
+            <label class="js__label" for="phone">Ваш телефон
+              <input class="phone__tell" type="text" placeholder="не выбрано" id="phone">
+              <svg class="icon icon-phone phone">
+                <use xlink:href="/img/svg/sprite.svg#phone"></use>
+              </svg>
+            </label>
+            <button class="popup__btn-bottom button" type="submit">Забронировать номер
+              <svg class="icon icon-right__footer right__footer fill">
+                <use xlink:href="/img/svg/sprite.svg#right__footer"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <script src="libs/ellipsis.min.js"> </script>
+      <script src="libs/air-datepicker.js"> </script>
+      <script src="libs/jquery.nice-select.min.js"> </script>
+      <script src="libs/aos.js"> </script>
+      <script src="libs/jquery.mCustomScrollbar.concat.min.js"> </script>
+      <script src="libs/jquery.maskedinput.min.js"> </script>
+      <script src="js/main.js"> </script>
+    </div>
+  </body>
+</html>
